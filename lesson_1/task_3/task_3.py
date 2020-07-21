@@ -18,6 +18,4 @@ max_char = str(input('Введите конец диапазона: '))
 
 print('Случайное целое число: ' + str(random.randint(min_int, max_int)))
 print('Случайное вещественное число: ' + str(random.uniform(min_float, max_float)))
-
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
-print('Случайный символ: ' + alphabet[random.randrange(alphabet.find(min_char), alphabet.find(max_char))])
+print('Случайный символ: ' + chr(random.randrange(ord(min_char), ord(max_char))))
